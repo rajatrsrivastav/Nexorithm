@@ -27,7 +27,7 @@ router.post('/', async (req: Request, res: Response) => {
       const actualOutput = await executor.execute(code, testCase.input);
 
       if (actualOutput === testCase.expectedOutput.trim()) {
-        passedCount++;
+        passedCount++; 
       } else {
         finalVerdict = 'Wrong Answer';
         failureDetail = `Test ${i+1}: Expected "${testCase.expectedOutput}", got "${actualOutput}"`;
