@@ -20,7 +20,7 @@ export const mockProblems: Problem[] = [
     title: 'Print Hello World',
     description: 'Print "Hello, World!" to stdout.',
     testCases: [
-      { input: '', expectedOutput: 'Hello, World!' },
+      { input: 'Hello, World!', expectedOutput: 'Hello, World!' },
     ],
   },
   {
